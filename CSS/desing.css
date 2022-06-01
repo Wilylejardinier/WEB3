@@ -1,3 +1,14 @@
+body[data-theme="light"]
+{
+    --hf-bg-color: #18c072;
+}
+
+body[data-theme="dark"]
+{
+    --hf-bg-color: #111111;
+}
+
+
 .Dron-IR{
     color: #FFFFFF;
 }
@@ -31,7 +42,7 @@ body.dark .btn-toggle {
 header {
     grid-area: head;
     text-align: center;
-    background-color: #18c072;
+    background-color: var(--hf-bg-color);
     font-family: Brush Script MT, Brush Script Std, cursive ;
 }
 nav {
