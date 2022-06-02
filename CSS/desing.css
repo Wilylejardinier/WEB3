@@ -1,11 +1,13 @@
 body[data-theme="light"]
 {
+    --a-bg-color: #FFFFFF;
     --hf-bg-color: #18c072;
 }
 
 body[data-theme="dark"]
 {
-    --hf-bg-color: #111111;
+    --a-bg-color: #2D2D30;
+    --hf-bg-color: #262626;
 }
 
 
@@ -52,6 +54,7 @@ nav {
 }
 aside {
   /* margin: 10px 0px 10px 10px; */
+  background-color: var(--a-bg-color);
   border-width: 3px;
   border-style: solid;
   border-image:
@@ -67,7 +70,7 @@ aside {
 }
 section {
     grid-area: section;
-    background-color: #FFFFFF;
+    background-color: var(--a-bg-color);
 
 
 }
@@ -84,7 +87,7 @@ section h2{
 section div.quatre_colonnes{
   display: grid;
   grid-template-columns: repeat(4,1fr);
- background-color: #FFFFFF;
+ background-color: var(--a-bg-color);
 }
 section div.quatre_colonnes p {
 text-align: center section;
@@ -106,7 +109,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 33% 33%;
     width: auto;
-    color: #FFFFFF;
+    color: var(--a-bg-color);
     }
 nav a {
     padding: 30px;
